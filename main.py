@@ -22,9 +22,10 @@ while attempts < maxAttempts:
             guess = int(input("Guess: "))
             if int(guess):
                 break
-        except ValueError: #Catch the error if the guess is not an int
+        except ValueError: # Catch the error if the guess is not an int
             print("That is not an integer")
             continue
+        
     # If guess is correct
     if guess == secretNumber:
         break
