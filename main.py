@@ -56,7 +56,6 @@ while playagain == True:
         ans = input("try again?(y/n): ")
 
         if ans == 'y' or ans == 'Y':
-            print("That")
             break
         elif ans == 'n' or ans == 'N':
             playagain = False
