@@ -53,7 +53,7 @@ while playagain == True:
         print("Game Over!")
 
     while True:
-        ans = input("try again?(y/n): ")
+        ans = input("Try Again? (Y/N): ")
 
         if ans == 'y' or ans == 'Y':
             break
@@ -61,4 +61,4 @@ while playagain == True:
             playagain = False
             break
         else:
-            print("That is not n or y")
+            print("That is not 'Y' or 'N'")
