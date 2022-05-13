@@ -25,7 +25,7 @@ while playagain == True:
         while True:
             try:
                 guess = int(input("Guess: "))
-                if int(guess):
+                if int(guess) or guess == 0:
                     break
             except ValueError:  # Catch the error if the guess is not an int
                 print("That is not an integer")
@@ -34,7 +34,10 @@ while playagain == True:
         # If guess is correct
         if guess == secretNumber:
             break
-
+        # If guess is out of range
+        elif guess < minVal or guess > maxVal:
+            print("Guess is out of range.")
+            attempts -= 1
         # If guess is too low
         elif guess < secretNumber:
             print("Guess is too low.")
