@@ -25,7 +25,7 @@ while playagain == True:
         while True:
             try:
                 guess = int(input("Guess: "))
-                if int(guess):
+                if int(guess) or guess == 0:
                     break
             except ValueError:  # Catch the error if the guess is not an int
                 print("That is not an integer")
